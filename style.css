@@ -12,31 +12,68 @@ body {
     background-color: lightcoral;
 }
 
+ul li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #a3a3a3;
+}
+
 
 /************** MAIN **************/
 main {
     display: flex;
-    height: calc(100vh - 80px);
-    width: 100%;
-    /*debug*/
-    background-color: lightsalmon;
+    height: calc(100vh - 100px);
+    color: white;
+    background-color: #141922;
 }
 
-.main-content {
-    overflow-y: scroll;
-    overflow-x: hidden;
+.pro {
+    height: 80px;
+    width: calc(100vw - 150px);
+    position: fixed;
+}
+
+.upgrade {
+    width: 22%;
+    border-color: white;
+    padding: 10px;
+    border-radius: 30px;
+    position: absolute;
+    right: 35px;
+    top: 20px;
+    text-align: center;
+    background-color: blue;
+    display: inline-block;
+    font-size: 13px;
+}
+
+.nav-list-main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    font-size: 13px;
+    padding-top: 10px;
+    color: #7d7f84;
 }
 
 
 
 /************** SIDEBAR **************/
 .sx-utility {
-    width: 150px;
-    height: 100%;
+    width: 170px;
+    /*height: 100%;*/
     text-align: left;
     padding: 10px;
-    /*debug*/
-    background-color: lightgreen;
+    color: #a3a3a3;
+    background-color: black;
+}
+
+.sx-utility h3 {
+    color: white;
 }
 
 .logo {
@@ -49,7 +86,7 @@ main {
 
 .nav-list ul li {
     margin-bottom: 10px;
-    text-decoration: none;
+    margin-top: 5px;
 }
 
 .icon-list {
@@ -57,17 +94,36 @@ main {
     vertical-align: middle;
 }
 
-.main-content { 
-    overflow-y: scroll; 
-    overflow-x: hidden; 
+.nome-playlist ul li {
+    line-height: 35px;
+    font-size: 15px;
+}
+
+.profile {
+    margin-top: 10px;
+}
+
+.profile-photo {
+    object-fit: cover;
+    border-radius: 50%;
+    background-color: lightgray;
+}
+
+.profile h3 {
+    display: inline-block;
 }
 
 
-.pro {
-    height: 80px;
-    width: calc(100vw - 80px);
-    /*debug*/
-    background-color: lightyellow;
+
+/************** CONTENT **************/
+.main-content { 
+    overflow-y: scroll; 
+    overflow-x: hidden;
+    width: calc(100% - 170px); 
+}
+
+.main-content img {
+    width: 100%;
 }
 
 .d-flex {
@@ -77,33 +133,80 @@ main {
 
 .play {
     gap: 10px;
-    margin-left: 10px;
 }
 
 .card {
-    height: 120px;
     width: calc(100% / 6 - 10px);
     margin-top: 30px;
-    /*debug*/
-    background-color: lightseagreen;
+    margin-bottom: 10px;
+}
+
+.text {
+    margin-top: 5px;
+    text-align: center;
 }
 
 .recently-played {
     margin-top: 20px;
-    margin-left: 10px;
+}
+
+.main-content h4, h3 {
+    padding-bottom: 10px;
 }
 
 .recently-played:last-child {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 
 /************** FOOTER **************/
 .audio-control {
     width: 100%;
-    height: 80px;
-    /*debug*/
-    background-color: lime;
+    height: 100px;
+    padding: 30px 20px;
+    background-color: #282828;
+    display: flex;
+}
+
+.footer i {
+    font-size: 20px;
+}
+
+.footer-left,
+.footer-right {
+    width: 25%;
+}
+
+.play-center {
+    width: 40%;
+    height: 60px;
+}
+
+.footer-left {
+    display: flex;
+    gap: 20px;
+    background-color: chartreuse;
+    justify-content: space-between;
+}
+
+.bar-music {
+    color: blueviolet;
+    width: 250px;
+    height: 5px;
+    border-radius: 3px;
+}
+
+.play-center {
+    display: flex;
+    background-color: coral;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-right {
+    display: flex;
+    justify-content: space-between;
+    background-color: aqua;
 }
 
 
@@ -132,7 +235,35 @@ main {
 
 
     @media screen and (max-width:600px) {
-        .sx-utility {
-            width: 40px;
+        .card {
+            height: 150px; 
+            width: calc(100% / 2 - 10px);
+        }
+    
+    
+        .main-content {
+            width: 100%;
+        }
+    
+        .recently-played {
+            margin-top: 10px;
         }
     }
+    
+    
+        .sx-utility {
+            width: 40px;  
+    
+        }
+    
+        .nav-list:not(.icon-list) {
+            display: none;
+        }
+    
+        .big-logo {
+            display: none;
+        }
+        
+
+
+    
