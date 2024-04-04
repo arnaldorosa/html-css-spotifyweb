@@ -245,7 +245,7 @@ i {
 
 
 /************** FOOTER **************/
-.audio-control {
+.audio-control { 
     width: 100%; 
     height: 100px;
     padding: 30px 20px; 
@@ -254,15 +254,15 @@ i {
     display: flex;
     justify-content: space-between;
     position: fixed;
-}
+} 
 
-.footer i {
+footer i {
     font-size: 18px;
 }
 
 .footer-left {
     width: 250px; 
-    display: flex;  
+    display: flex;   
 }
 
 .play-center {
@@ -324,7 +324,7 @@ i {
 }
 
 .footer-right {
-    width: 200px;
+    width: 200px; 
     display: flex;
     justify-content: space-between;
 }
@@ -339,7 +339,59 @@ i {
 }
 
 .play-center {
-    margin-left: 15px;
+    margin-right: 15px;
+}
+
+
+/************** HOVER **************/
+.upgrade:hover{
+    transform: scale(1.1);
+}
+
+.nav-list-main h4:hover {
+    color: white;
+}
+
+.nome-playlist ul li a:hover {
+    color: white;
+}
+
+.nav-list ul li:hover {
+    color: white;
+}
+
+.a-hover:hover {
+    color: white;
+}
+
+.app a span:hover {
+    color: white;
+}
+
+.foot-text h5:hover {
+    color: white;
+    text-decoration:underline;
+}
+
+.fl-icons :hover{
+    color: white;
+}
+
+.fa-circle-play:hover {
+    color: white;
+    transform: scale(1.2);
+}
+
+.progress-bar:hover {
+    border: 3px solid greenyellow;
+}
+
+.hover-card:hover {
+    display: inline-block;
+}
+
+.dot-bar:hover {
+    display: inline-block;
 }
 
 
